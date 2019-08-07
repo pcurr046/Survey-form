@@ -1,0 +1,214 @@
+<style>
+body { background:url("https://14ljpk2ezaxb4dksqi3bz96r3-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/5D3_8803.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1 {
+  color: white;
+  font-family: cursive;
+  text-align: center;
+  text-shadow: 0 0 11px #000;
+}
+
+#formdiv {
+ 
+  margin: auto;
+  width: 90%;
+  line-height: 2;
+}
+form {
+  margin-bottom: 3%;
+  padding-bottom: 3%;
+  background-color: rgba(127, 0, 255, 0.2);
+  padding-top: 1%;
+  border-radius: 15px;
+  border: 3px;
+  overflow: auto;
+  
+  
+  
+}
+p {
+  color: white;
+  font-size: 20px;
+  text-shadow: 0 0 10px #000;
+  font-family: fantasy, Sans-Serif, Lato;
+}
+label {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 0 0 3px #000;
+  font-family: fantasy, Sans-Serif, Lato;
+  margin-left:1%;
+  display: block;
+ 
+}
+.align-right {
+  display: inline-block;
+	float: right;
+	width: 50%;
+  margin-right:1%;
+}
+input {
+  border-radius: 10px;
+  font: inherit;
+  font-size: 85%;
+}
+select {
+    font: inherit;
+    font-size: 19px;
+    color: gray;
+}
+input, select {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+textarea {
+  font-family: fantasy, Sans-Serif, Lato;
+  font-size: 20px;
+  color: gray;
+  border-radius: 10px;
+   -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+button {
+  font-family: fantasy, Sans-Serif;
+  font-size: 20px;
+  color: white;
+  background-color: green;
+  border: 2px;
+  border-radius: 15%;
+  text-shadow: 0 0 3px #000;
+	justify-content: center;
+  margin: 5% 45% 2% 45%;
+}
+#description {
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+}
+#socialmediabuttons {
+  text-align: center;
+}
+#formbutton { 
+ 
+}
+#myself {
+  color: white;
+  font-family: cursive;
+  text-align: center;
+}
+.socialmedia {
+  height: 50px;
+  border-radius: 8px;
+  justify-content: center;
+}
+</style>
+
+
+<body>
+  <h1 id="title">Asana Yoga's Survey Form</h1>
+  <p id="description">
+    We want to continue to provide you with the classes and instruction you need, so we’re asking you, our student, to participate in a short survey that will provide us with valuable insights into what you want from your practice and our yoga studio. Thank you!
+  </p>
+ 
+  <div id="formdiv">
+    <form  id="survey-form">
+      
+      <div>
+      <label class="align-left" id="name-label">Enter your name:
+        <input class="align-right" type="text" placeholder="Type your name" id="name" required>
+        </label>
+      </div>
+      
+      <div>
+      <label class="align-left" id="email-label">Enter your email:
+        <input class="align-right" type="email" id="email" placeholder="Type your email" name="email" required>
+        </label>
+      </div>
+  
+      <div>
+      <label class="align-left" id="number-label">How many years have you been practicing yoga?
+        <input class="align-right" type="number" id="number" min=0 max=70 maxlenght=2 placeholder="Enter a number" required>
+      </label>
+      </div>
+     
+      <div>
+      <label class="dropdown">How many times a week do you practice?
+        <select class="align-right" id="dropdown">
+         <option value="Once">Once</option>
+         <option value="Twice">Twice</option>
+         <option value="Threetimes">Three times</option>
+         <option value="Fourtimes">Four times</option>
+         <option value="Fivetimes">Five times</option>
+         <option value="Sixtimes">Six times</option>
+         <option value="Everyday">Everyday</option>
+         </select>
+         </label>
+         </div>
+    
+      
+
+        
+      <div><label for="yogatype">What is your preferred yoga style?
+       <div class="align-right"><input id ="ashtanga" type="radio" name="yogatype" value=1>Ashtanga</div><br>
+       <div class="align-right"><input id="kundalini" type="radio" name="yogatype" value=2>Kundalini</div><br>
+       <div class="align-right"><input id="lyengar" type="radio" name="yogatype" value=3>Lyengar</div><br>
+       <div class="align-right"><input id="hatha" type="radio" name="yogatype" value=4>Hatha</div><br>
+       <div class="align-right"><input id="vinyasa" type="radio" name="yogatype" value=5>Vinyasa</div><br>
+       <div class="align-right"><input id="yin" type="radio" name="yogatype" value=6>Yin</div><br>
+        
+      </label>
+      </div>
+      
+      <div>
+     <label class="dropdown">What class format do you prefer?
+        <select class="align-right" id="dropdown">
+         <option value="Drop-in">Drop in (First come first served)</option>
+          <option value="Series">Series (Requires a month's commitment)</option>
+         
+         </select>
+         </label>
+         </div>
+  
+      <div><label>What do you enjoy in class?(Check all that apply)
+        <label class="align-right" for="chanting"><input id="chanting" type="checkbox" name="elements" value="chanting"> Chanting</label>
+        <label class="align-right" for="music"><input id="music" type="checkbox" name="elements" Value="music"> Music</label>
+        <label class="align-right" for="meditation"><input id="meditation" type="checkbox" name="elements" value="meditation"> Meditation</label><br>
+        <label class="align-right" for="physical-adjustments"><input id="physical-adjustments" type="checkbox" name="elements" value="phisical-adjustments"> Physical adjustments</label><br>
+        <label class="align-right" for="verbal-adjustments"><input id="verbal-adjustments" type="checkbox" name="elements" value="verbal-adjustments"> Verbal adjustments</label><br>
+        <label class="align-right" for="demonstrations"><input id="demonstrations" type="checkbox" name="elements" value="demonstrations"> Demonstrations</label><br>
+        <label class="align-right" for="pranayama"><input id="pranayama" type="checkbox" name="elements" value="pranayama"> Pranayama (breathing exercises)</label>
+        </label>
+      </div>
+      
+      
+  <div>
+    <label>How else could we improve?
+      
+    <textarea class="align-right" rows="4" cols="50">We love your feedback!
+</textarea>
+      </label>
+  </div>
+  <br>
+      <div id="formbutton">
+     <button type="submit" id="submit"> Submit!</button>
+      </div>
+  </form><br>
+  </div>
+</body>
+
+  <footer>
+    <p id="myself">by Patricia Curry</p>
+    <div id="socialmediabuttons">
+      <a target="_blank"  href="http://www.instagram.com/theeverythingbabe"><img class="socialmedia" src="https://cdn.worldvectorlogo.com/logos/instagram-2-1.svg"></a>
+      <a target="_blank"  href="https://www.linkedin.com/in/patricia-curry-186211120/"><img class="socialmedia" src="data:image/png;base64,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"></a>
+      <a target="_blank"  href="https://github.com/pcurr046"><img class="socialmedia" src="data:image/png;base64,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"></a>
+    </div>
+  </footer>
