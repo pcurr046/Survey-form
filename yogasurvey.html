@@ -1,5 +1,5 @@
 <style>
-body { background:url("https://14ljpk2ezaxb4dksqi3bz96r3-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/5D3_8803.jpg") no-repeat center center fixed; 
+ body { background:url("https://14ljpk2ezaxb4dksqi3bz96r3-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/5D3_8803.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -35,6 +35,7 @@ p {
   font-size: 20px;
   text-shadow: 0 0 10px #000;
   font-family: fantasy, Sans-Serif, Lato;
+  margin-left:1%;
 }
 label {
   color: white;
@@ -42,7 +43,7 @@ label {
   font-size: 20px;
   text-shadow: 0 0 3px #000;
   font-family: fantasy, Sans-Serif, Lato;
-  margin-left:1%;
+  margin-left: 1%;
   display: block;
  
 }
@@ -50,7 +51,7 @@ label {
   display: inline-block;
 	float: right;
 	width: 50%;
-  margin-right:1%;
+  margin-right: 1%;
 }
 input {
   border-radius: 10px;
@@ -109,8 +110,10 @@ button {
   border-radius: 8px;
   justify-content: center;
 }
+.clear {
+  clear: both;
+}
 </style>
-
 
 <body>
   <h1 id="title">Asana Yoga's Survey Form</h1>
@@ -127,18 +130,24 @@ button {
         </label>
       </div>
       
+       <div class="clear"></div>
+      
       <div>
       <label class="align-left" id="email-label">Enter your email:
         <input class="align-right" type="email" id="email" placeholder="Type your email" name="email" required>
         </label>
       </div>
+      
+       <div class="clear"></div>
   
       <div>
       <label class="align-left" id="number-label">How many years have you been practicing yoga?
-        <input class="align-right" type="number" id="number" min=0 max=70 maxlenght=2 placeholder="Enter a number" required>
+        <input class="align-right" type="number" id="number" min=0 max=70 maxlength=2 placeholder="Enter a number" required>
       </label>
       </div>
      
+       <div class="clear"></div>
+      
       <div>
       <label class="dropdown">How many times a week do you practice?
         <select class="align-right" id="dropdown">
@@ -154,7 +163,7 @@ button {
          </div>
     
       
-
+       <div class="clear"></div>
         
       <div><label for="yogatype">What is your preferred yoga style?
        <div class="align-right"><input id ="ashtanga" type="radio" name="yogatype" value=1>Ashtanga</div><br>
@@ -166,7 +175,7 @@ button {
         
       </label>
       </div>
-      
+       <div class="clear"></div>
       <div>
      <label class="dropdown">What class format do you prefer?
         <select class="align-right" id="dropdown">
@@ -177,7 +186,9 @@ button {
          </label>
          </div>
   
-      <div><label>What do you enjoy in class?(Check all that apply)
+       <div class="clear"></div>
+      
+      <div><p>What do you enjoy in class?(Check all that apply)
         <label class="align-right" for="chanting"><input id="chanting" type="checkbox" name="elements" value="chanting"> Chanting</label>
         <label class="align-right" for="music"><input id="music" type="checkbox" name="elements" Value="music"> Music</label>
         <label class="align-right" for="meditation"><input id="meditation" type="checkbox" name="elements" value="meditation"> Meditation</label><br>
@@ -185,16 +196,17 @@ button {
         <label class="align-right" for="verbal-adjustments"><input id="verbal-adjustments" type="checkbox" name="elements" value="verbal-adjustments"> Verbal adjustments</label><br>
         <label class="align-right" for="demonstrations"><input id="demonstrations" type="checkbox" name="elements" value="demonstrations"> Demonstrations</label><br>
         <label class="align-right" for="pranayama"><input id="pranayama" type="checkbox" name="elements" value="pranayama"> Pranayama (breathing exercises)</label>
-        </label>
+        </p>
       </div>
       
+      <div class="clear"></div>
       
   <div>
-    <label>How else could we improve?
+    <p>How else could we improve?
       
-    <textarea class="align-right" rows="4" cols="50">We love your feedback!
+    <textarea class="align-right" rows="4" cols="50" placeholder="We love your feedback!">
 </textarea>
-      </label>
+      </p>
   </div>
   <br>
       <div id="formbutton">
